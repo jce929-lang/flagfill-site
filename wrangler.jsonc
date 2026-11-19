@@ -1,0 +1,11 @@
+// Flagfill site (flagfill.esteslabs.app) on Cloudflare Workers, static files only, like Sift's.
+// Deploy: npx wrangler deploy (from this folder)
+{
+  "name": "flagfill",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "." },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "flagfill.esteslabs.app", "custom_domain": true }
+  ]
+}
